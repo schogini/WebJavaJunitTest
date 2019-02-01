@@ -14,6 +14,8 @@
 
         e.printStackTrace();
     }
+    
+    String javahome = System.getenv("JAVA_HOME");
 %>
 <!DOCTYPE html>
 <html>
@@ -24,6 +26,6 @@
 <h2>Host Name of server <%=hostName%></h2>
   <h2>InetAddress: <%=serverAddress %></h2>
   <h2>InetAddress.hostname: <%=hostname %></h2>
-JAVA_HOME = <%=System.getenv("JAVA_HOME")%>
+<h2>Jhome: <%=javahome %></h2>
 </body>
 </html>
